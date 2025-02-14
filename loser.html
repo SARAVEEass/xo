@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>U WILL ALWAYS B MINE</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body> <!-- Automatically starts typewriter effect -->
+    
+    <div class ="center">
+        <h2> lmao u thought u could reject me x </h2>
+    </div>
+    
+    <p id="message"></p> <!-- ADDED: Typewriter text container -->
+
+    <div class="center">
+        <button class="button" onclick="typeWriter()">yes!!!</button>
+        <button class="button" onclick="typeWriter()">YESSS!!!</button>
+    </div>
+
+    <script>
+        const text = "u will always be mine <333";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("message").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); 
+            }
+        }
+    </script>
+
+</body>
+</html>

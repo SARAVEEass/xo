@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    
+}
+
+#game{
+    background-color: darkslategrey;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.h1{
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: palevioletred;
+}
+

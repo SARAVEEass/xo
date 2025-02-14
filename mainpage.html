@@ -1,0 +1,67 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BE MY VALENTINE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="show_hideNAY(); show_hideYAY();">  
+        <script>
+            function yes_button(butt, butt2){
+                const image = new Image();
+                image.src = "yes.png";
+                image.classList.add("yes-image");
+                document.body.appendChild(image);
+                butt.disabled = true;
+                butt2.disabled = true;
+            }
+            function show_hideYAY(){
+                var x = document.getElementById("YAY");
+                if (x.style.display === "none"){
+                    x.style.display = "block"; 
+                    <!-- to add a set timeout later-->
+                }
+                else{
+                    x.style.display = "none";
+                }
+            }
+            function show_hideNAY(){
+                var xx = document.getElementById("NAY");
+                if (xx.style.display === "none"){
+                    xx.style.display = "block";
+                }
+                else{
+                    xx.style.display = "none";
+                }
+            }
+            function no_button(butt, butt2){
+                const image = new Image();
+                image.src = "no1.png";
+                image.classList.add("no-image");
+                document.body.appendChild(image);
+                butt.disabled = true;
+                butt2.disabled = true;
+                show_hideYAY();
+                show_hideNAY();
+            }
+        </script>
+        <div class = center>
+            <h1>will u be my valentine?</h1>
+        </div>
+        <div class = "center">
+        <button class="button" id="butt1" onclick="yes_button(this, document.getElementById('butt2'))">yes!!!</button>
+        <button class="button-rejection" id="butt2" onclick="no_button(this, document.getElementById('butt1'))">no :(</button>
+        </div>
+        <div class="center">
+            <img src="racoon frame1.png" class="animated-image">
+        </div>
+        <div class="center">
+            <button class="button" id="YAY" onclick="yes_button(this, document.getElementById('NAY'))">YES</button>
+            <button class="button-rejection" id="NAY" onclick="window.location.href='THEBATTLE.html'">OR NO</button>
+        </div>
+    </body>
+    </html>
+</html>

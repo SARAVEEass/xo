@@ -1,0 +1,125 @@
+.h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+.h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+
+.button{
+    background-color: palevioletred;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin: 10px 50px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.button:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: pink;
+    box-shadow: 0 5px rgb(205, 148, 167);
+    transform: translateY(4px)
+}
+
+.button-rejection{
+    background-color: rgb(238, 87, 87);
+    border: none;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin: 10px 50px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.button-rejection:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.button-rejection:active{
+    background-color: lightcoral;
+    box-shadow: 0 5px rgb(215, 85, 85);
+    transform: translateY(4px)
+}
+
+@keyframes home_flicker{
+    0% {content: url('racoon\ frame1.png');}
+    50% {content: url('racoon\ frame2.png');}
+    100% {content: url('racoon\ frame1.png');}
+
+}
+
+.animated-image{
+    width: 350px;
+    height: 250px;
+    animation: home_flicker 1s infinite;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust spacing between buttons */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+
+.yes-image{
+    width: 1200px;
+    height: 180px;
+    animation: yes_flicker 4s infinite;
+}
+
+@keyframes yes_flicker{
+    0% {content: url('yes.png');}
+    10% {content: url('yes2.png');}
+    20% {content: url('yes3.png');}
+    30% {content: url('yes4.png');}
+    40% {content: url('yes5.png');}
+    50% {content: url('yes6.png');}
+    60% {content: url('yes7.png');}
+    70% {content: url('yes8.png');}
+    80% {content: url('yes9.png');}
+    90% {content: url('yes.png');}
+    100% {content: url('yes.png');}
+
+}
+
+.no-image{
+    width: 1200px;
+    height: 180px;
+    animation: naur_flicker 2s infinite;
+}
+
+@keyframes naur_flicker{
+    14% {content: url('no1.png');}
+    28% {content: url('no2.png');}
+    42% {content: url('no3.png');}
+    56% {content: url('no4.png');}
+    70% {content: url('no5.png');}
+    84% {content: url('no6.png');}
+    100% {content: url('no1.png');}
+
+}
+
+#message {
+    font-size: 50px;  /* Makes the text big */
+    font-weight: bold; /* Makes it bold */
+    color: palevioletred; /* Change text color */
+    text-align: center; /* Centers the text */
+    font-family: 'Arial', sans-serif; /* Customize font */
+    margin-top: 20px;
+}
+
